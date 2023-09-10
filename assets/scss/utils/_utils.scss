@@ -43,6 +43,9 @@
     // @include pad {
     //   height: 100vh;
     // }
+    &-351 {
+      height: 351px;
+    }
   }
 }
 .w {
@@ -105,7 +108,7 @@
   }
   &-416 {
     flex-basis: 416px;
-    @include phone-s {
+    @include phone {
       flex-basis: auto;
     }
   }
