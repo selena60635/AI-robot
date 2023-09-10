@@ -1,0 +1,86 @@
+.svg {
+  &-light {
+    fill: $light;
+    &:hover {
+      fill: #828282;
+    }
+  }
+}
+.dot {
+  &-8 {
+    background: $light;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    &-dark {
+      background: $dark;
+      border-radius: 50%;
+      width: 8px;
+      height: 8px;
+    }
+  }
+  &-12 {
+    background: $light;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+  }
+  &-16 {
+    background: $light;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    &-dark {
+      background: $dark;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+.bar {
+  &-12 {
+    width: 124px;
+    height: 12px;
+    background: $light;
+    border-radius: 50px;
+  }
+  &-100 {
+    width: 100%;
+    height: 12px;
+    background: $dark;
+  }
+}
+.swiper {
+  overflow: clip;
+  &-scrollbar-drag {
+    background-color: $light;
+  }
+  &-scrollbar {
+    background-color: rgba($light, 0.2);
+  }
+}
+.swiper-slide {
+  width: 416px;
+  height: 416px;
+}
+
+.form-control {
+  resize: none;
+  &::placeholder {
+    font-size: 20px;
+    font-weight: bold;
+    color: $fourth;
+  }
+  &:focus::placeholder {
+    color: transparent;
+  }
+}
+@keyframes rotate360 {
+  from {
+    rotate: 0;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
