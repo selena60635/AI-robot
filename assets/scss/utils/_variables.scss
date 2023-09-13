@@ -380,6 +380,7 @@ $gradient: linear-gradient(
   rgba($primary, 1),
   rgba(#12012f, 1)
 ) !default;
+$gradient-none: linear-gradient(transparent) !default;
 // scss-docs-end variable-gradient
 
 // Spacing

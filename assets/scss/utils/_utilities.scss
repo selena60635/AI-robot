@@ -773,4 +773,18 @@ $utilities: map-merge(
   )
 );
 // 開啟尺寸大小自適應
-// $font-weight-medium: map-get($font-weights, "medium");
+$utilities: map-merge(
+  $utilities,
+  (
+    "gradient":
+      map-merge(
+        map-get($utilities, "gradient"),
+        (
+          responsive: true,
+          values: (
+            gradient-none: var(--#{$prefix}gradient-none),
+          ),
+        )
+      ),
+  )
+);

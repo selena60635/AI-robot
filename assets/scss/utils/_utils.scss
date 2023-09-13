@@ -40,9 +40,9 @@
 .h {
   &-960 {
     height: 960px;
-    // @include pad {
-    //   height: 100vh;
-    // }
+    @include pad {
+      height: 100vh;
+    }
     &-351 {
       height: 351px;
     }
